@@ -117,7 +117,7 @@ public class Dado {
      * Comprueba que el numero de caras sea valido
      * @return true si es valido
      */
-    public boolean comprobarCaras(int nCaras){
+    private boolean comprobarCaras(int nCaras){
         return nCaras == 4 || nCaras == 6 || nCaras == 8 || nCaras == 10 || nCaras == 12 || nCaras == 20 || nCaras == 100;
     }
 
