@@ -19,6 +19,34 @@ public class Ornitorrinco extends Animal {
         this.tieneVeneno = tieneVeneno;
     }
 
+    public String getSombrero() {
+        return this.sombrero;
+    }
+
+    public void setSombrero(String sombrero) {
+        this.sombrero = sombrero;
+    }
+
+    public int getNHuevosPuestos() {
+        return this.nHuevosPuestos;
+    }
+
+    public void setNHuevosPuestos(int nHuevosPuestos) {
+        this.nHuevosPuestos = nHuevosPuestos;
+    }
+
+    public boolean isTieneVeneno() {
+        return this.tieneVeneno;
+    }
+
+    public boolean getTieneVeneno() {
+        return this.tieneVeneno;
+    }
+
+    public void setTieneVeneno(boolean tieneVeneno) {
+        this.tieneVeneno = tieneVeneno;
+    }
+
     @Override
     public void hacerSonido(){
         System.out.println("Grrrrr");
