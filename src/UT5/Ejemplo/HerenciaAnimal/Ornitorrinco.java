@@ -1,4 +1,5 @@
 package UT5.Ejemplo.HerenciaAnimal;
+import java.util.Objects;
 
 public class Ornitorrinco extends Animal {
     String sombrero;
@@ -50,6 +51,19 @@ public class Ornitorrinco extends Animal {
     @Override
     public void hacerSonido(){
         System.out.println("Grrrrr");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this==o) {
+            return true;
+        }
+        if (!(o instanceof Ornitorrinco)) {
+            return false;
+        }
+        Ornitorrinco ornitorrinco = (Ornitorrinco) o;
+
+        return super.equals(ornitorrinco) && this.sombrero == ornitorrinco.getSombrero() && this.tieneVeneno == ornitorrinco.getTieneVeneno() && this.nHuevosPuestos == ornitorrinco.getNHuevosPuestos();
     }
 
     @Override
